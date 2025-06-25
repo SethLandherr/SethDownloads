@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KA Tools – Software Downloads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>KA Tools – Software Downloads</h1>
+
+  <div class="grid">
+    <!-- SLEmailer -->
+    <div class="card">
+      <div class="info">
+        <span class="name">SLEmailer</span>
+        <span class="desc">Scheduled email distribution</span>
+        <span class="version">v2.1</span>
+      </div>
+      <div class="buttons">
+        <a class="btn download" href="downloads/SLEmailer_v2.1.exe">Download</a>
+        <button class="btn changelog" onclick="openLog('sle')">View Changelog</button>
+      </div>
+    </div>
+
+    <!-- EML to PDF Converter -->
+    <div class="card">
+      <div class="info">
+        <span class="name">EML to PDF Converter</span>
+        <span class="desc">Converts .eml files to PDF format</span>
+        <span class="version">v1.5</span>
+      </div>
+      <div class="buttons">
+        <a class="btn download" href="downloads/EML_to_PDF_Converter_v1.5.exe">Download</a>
+        <button class="btn changelog" onclick="openLog('eml')">View Changelog</button>
+      </div>
+    </div>
+
+    <!-- Data Dump -->
+    <div class="card">
+      <div class="info">
+        <span class="name">Data Dump</span>
+        <span class="desc">Extracts records from a database</span>
+        <span class="version">v3.0</span>
+      </div>
+      <div class="buttons">
+        <a class="btn download" href="downloads/Data_Dump_v3.0.exe">Download</a>
+        <button class="btn changelog" onclick="openLog('dump')">View Changelog</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <dialog id="modal">
+    <button class="close" onclick="modal.close()">×</button>
+    <h2 id="modal-title">Changelog</h2>
+    <pre id="modal-body"></pre>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
